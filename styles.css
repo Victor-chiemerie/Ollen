@@ -1,0 +1,21 @@
+body {
+  background-color: #ffcccc; /* pinkish background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body #love-icon {
+  position: absolute;
+}
+body #message-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #ff69b4; /* pink */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
