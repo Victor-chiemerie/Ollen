@@ -1,7 +1,3 @@
-document.getElementById('message-button').addEventListener('click', function() {
-    alert('You are loved! ❤️');
-});
-
 // Create love icons at random positions
 function createLoveIcons() {
     const loveIcon1 = document.createElement('img');
@@ -77,3 +73,23 @@ for (let i = 0; i < 2; i++) {
 }
 
 createAngel();
+
+const ollen = document.querySelector('.h1');
+const message = document.querySelector('.sms');
+const btn = document.querySelector('#message-button');
+const mainSms = document.querySelector('.mainSms');
+const close = document.querySelector('.close');
+
+btn.addEventListener('click', () => {
+    ollen.classList.add('hide');
+    message.classList.add('hide');
+    btn.classList.add('hide');
+    mainSms.classList.remove('hide');
+})
+
+close.addEventListener('click', () => {
+    ollen.classList.remove('hide');
+    message.classList.remove('hide');
+    btn.classList.remove('hide');
+    mainSms.classList.add('hide');
+})
